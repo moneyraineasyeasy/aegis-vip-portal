@@ -193,7 +193,7 @@ if "logged_in" not in st.session_state:
 st.markdown("""
     <div class="header-container">
         <span class="glowing-trophy">🏆</span>
-        <span class="vip-header-text">雨姐VIP足球分析</span>
+        <span class="vip-header-text">雨姐VIP推薦庫</span>
     </div>
 """, unsafe_allow_html=True)
 st.markdown('<div class="vip-subtitle">自研 AEGIS 模型 V5</div>', unsafe_allow_html=True)
