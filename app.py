@@ -11,9 +11,6 @@ os.environ["ARROW_DEFAULT_MEMORY_POOL"] = "system"
 st.set_page_config(
     page_title="雨姐VIP推薦庫 | Aegis Terminal",
     page_icon="static/favicon.ico",
-    st.markdown("""
-    <link rel="icon" href="https://kommodo.ai/i/2TbRVyc2rL5Vb1c2EN3X">
-""", unsafe_allow_html=True)
     layout="centered",
     initial_sidebar_state="collapsed"
 )
