@@ -218,14 +218,14 @@ if "logged_in" not in st.session_state:
 st.markdown("""
     <div class="header-container">
         <span class="glowing-trophy">🏆</span>
-        <span class="vip-header-text">雨姐VIP足球 analysis</span>
+        <span class="vip-header-text">雨姐VIP推薦庫</span>
     </div>
 """, unsafe_allow_html=True)
 st.markdown('<div class="vip-subtitle">自研 AEGIS 模型 V5</div>', unsafe_allow_html=True)
 
 # 5. AUTHENTICATION PORTAL
 if not st.session_state.logged_in:
-    st.markdown("### 🔐 會員登入 / Client Login")
+    st.markdown("### 🔐 會員登入 / VIP Login")
     
     input_user = st.text_input("用戶名 (Username)", placeholder="輸入會員帳號...").strip()
     input_pass = st.text_input("密碼 (Password)", type="password", placeholder="******").strip()
