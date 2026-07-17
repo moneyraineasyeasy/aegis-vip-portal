@@ -9,8 +9,8 @@ os.environ["ARROW_DEFAULT_MEMORY_POOL"] = "system"
 
 # 1. Page Configuration (Forcing collapsed sidebar for cleaner mobile entry)
 st.set_page_config(
-    page_title="雨姐VIP足球分析 | Aegis Terminal",
-    page_icon="🏆",
+    page_title="雨姐VIP推薦庫 | Aegis Terminal",
+    page_icon="static/logo.png",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
