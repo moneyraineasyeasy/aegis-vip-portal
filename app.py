@@ -3,7 +3,22 @@ import time
 import pandas as pd
 import streamlit as st
 from datetime import datetime
+import streamlit as st
+import streamlit.components.v1 as components
 
+# This HTML injection replaces the logo globally
+favicon_link = """
+<script>
+    var link = document.querySelector("link[rel*='icon']");
+    if (!link) {
+        link = document.createElement('link');
+        link.rel = 'shortcut icon';
+        document.head.appendChild(link);
+    }
+    link.href = 'https://kommodo.ai/i/uLZm8VfZEr7El3G9r3DL';
+</script>
+"""
+components.html(favicon_link, height=0, width=0)
 # Prevent PyArrow segmentation faults on local systems
 os.environ["ARROW_DEFAULT_MEMORY_POOL"] = "system"
 
